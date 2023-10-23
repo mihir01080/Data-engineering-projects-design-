@@ -39,7 +39,10 @@ Normalization notes:
 First Normal Form (1NF): This level of normalization has been achieved. Each table contains only atomic (indivisible) values, and there are no repeating groups. 
 For example, the "Artists" and "Tracks" tables have fields like artist_name, artist_count, and track_name, each containing atomic values.
 
-Second Normal Form (2NF): You have achieved 2NF by ensuring that all non-key attributes are fully functionally dependent on the primary key. 
+Second Normal Form (2NF): 2NF was achieved by ensuring that all non-key attributes are fully functionally dependent on the primary key. 
 For instance, the "Track_Release_Info" table has a composite primary key (track_id, released_year, released_month, released_day), and all other attributes are functionally dependent on this key.
 
-Third Normal Form (3NF): Your design complies with 3NF by eliminating transitive dependencies. For example, in the "Track_Audio_Features" table, attributes like bpm, key, mode, danceability_percent, valence_percent, energy_percent, etc., are all directly dependent on the primary key (track_artist_id).
+Third Normal Form (3NF): The design complies with 3NF by eliminating transitive dependencies. For example, in the "Track_Audio_Features" table, attributes like bpm, key, mode, danceability_percent, valence_percent, energy_percent, etc., are all directly dependent on the primary key (track_artist_id).
+Contributors:
+
+[Mihir Patel]
